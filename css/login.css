@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+    background-color: rgba(167, 159, 159, 0.993);
+}
+
+.B {
+    background-color: bisque;
+    height: 100vh;
+    width: 100%;
+    border: 5px solid black;
+   
+}
+.C{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:rgb(133, 133, 199) ;
+    border-radius: 5px;
+    border: 5px solid black;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+
+}
