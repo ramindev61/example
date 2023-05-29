@@ -1,23 +1,52 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="css/login.css">
-</head>
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
 
-<body>
+  <body>
     <div class="B">
-        <div class="C">
-
-            <input class="Pass" type="text" id="searchBox" name="searchBox" placeholder="   email" size="20" />
-            <input class="Pass" type="text" id="searchBox" name="searchBox" placeholder="   password" size="20" />
-            <button class="Sign" type="submit">sign in</button>
-        </div>
+      <div class="C">
+        <input
+          class="textbox"
+          type="text"
+          id="searchBox"
+          name="searchBox"
+          placeholder=" Email"
+          size="20"
+        />
+        <input
+          class="textbox"
+          type="text"
+          id="searchBox"
+          name="searchBox"
+          placeholder=" Password"
+          size="20"
+        />
+        <button id="signbtn" class="Sign" type="button" onclick="alertmamad()">
+          &nbsp;&nbsp;sign in&nbsp;&nbsp;
+        </button>
+      </div>
     </div>
-</body>
+    <script>
+      function alertmamad() {
+        // alert("Salam Mammad");
+        console.log("Salam Habil");
+        console.log(this);
 
+        let SignBotton = document.getElementById("signbtn");
+        SignBotton.innerHTML = "number is : " + getRandomInt(4000).toString();
+      }
+
+      function getRandomInt(max) {
+        return Math.floor(Math.random() * max);
+      }
+    </script>
+  </body>
 </html>
